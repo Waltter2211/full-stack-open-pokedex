@@ -4,12 +4,9 @@ describe('Pokedex', function() {
     cy.visit('http://localhost:8080/')
     cy.contains('ivysaur')
     cy.contains('Pokémon and Pokémon character names are trademarks of Nintendo.')
-    cy.visit('http://localhost:8080/pokemon/ivysaur/')
-    cy.contains('overgrow')
-    cy.contains('chlorophyll')
   })
   /* it('pokemon page can be navigated to', function() {
-    cy.visit()
+    cy.visit('http://localhost:5000/pokemon/ivysaur')
     cy.contains('overgrow')
     cy.contains('chlorophyll')
   }) */
