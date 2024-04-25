@@ -5,8 +5,5 @@ module.exports = defineConfig({
     setupNodeEvents() {
       // implement node event listeners here
     },
-    e2e: {
-      baseUrl: 'http://localhost:5000/'
-    }
   },
 })
