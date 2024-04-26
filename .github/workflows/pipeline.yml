@@ -42,5 +42,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DRY_RUN: true
-          DEFAULT_BRANCH: main
           DEFAULT_BUMP: patch
