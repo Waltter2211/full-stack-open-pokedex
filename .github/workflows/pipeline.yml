@@ -44,7 +44,7 @@ jobs:
         with:
             severity: error
             description: ${{ github.event_name }}
-            details: ${{ github.sha }}
+            details: https://${{ github.repository }}/commit/${{ github.sha }}
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Test Cancelled
         uses: rjstone/discord-webhook-notify@v1
