@@ -44,7 +44,7 @@ jobs:
         with:
             severity: error
             description: ${{ github.event_name }}
-            details: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+            details: https://github.com/${{ github.repository }}/commit/${{ github.sha }} by ${{ github.actor }} broke the build
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Test Cancelled
         uses: rjstone/discord-webhook-notify@v1
