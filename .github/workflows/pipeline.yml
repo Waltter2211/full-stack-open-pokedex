@@ -43,7 +43,8 @@ jobs:
         if: failure()
         with:
             severity: error
-            details: Test Failed!
+            description: ${{ github.event_name }}
+            details: ${{ github.sha }}
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Test Cancelled
         uses: rjstone/discord-webhook-notify@v1
