@@ -35,7 +35,8 @@ jobs:
         if: success()
         with:
             severity: info
-            details: Test Succeeded!
+            description: none
+            details: to https://full-stack-open-pokedex-qe65.onrender.com/ by waltter2211
             webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Test Failure
         uses: rjstone/discord-webhook-notify@v1
